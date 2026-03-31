@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const monitor = require('./monitor-data');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -77,6 +78,11 @@ app.get('/api/profile', (_req, res) => {
       "Google Cloud (Introductory)",
     ],
   });
+});
+
+// ── Monitor API ─────────────────────────────────────────────────────────────
+app.get('/api/monitor', (_req, res) => {
+  res.json(monitor);
 });
 
 // SPA fallback

@@ -11,6 +11,7 @@ import {
   prepareWithSegments,
   layoutWithLines,
 } from 'https://esm.sh/@chenglou/pretext@0.0.4';
+import { initMonitor } from './monitor.js';
 
 // ─── Fetch profile data from our backend API ──────────────────────────────────
 const res = await fetch('/api/profile');
@@ -241,6 +242,9 @@ document.fonts.ready.then(() => {
   renderSkills();
   renderDemo();
 });
+
+// Init monitor (runs in parallel, doesn't need fonts)
+initMonitor();
 
 // Re-render hero on resize (debounced)
 let resizeTimer;
