@@ -3,6 +3,7 @@
  * Uses @chenglou/pretext for all text measurement & layout
  * Loaded as an ES module (type="module" in HTML)
  */
+// v2 — trigger redeploy
 
 // ─── Import pretext from esm.sh CDN ──────────────────────────────────────────
 import {
