@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian Lam — Portfolio</title>
+  <meta name="description" content="Adrian Lam — Green Energy, Smart Technology, AI & Physics student at HKBU. Builder of AI systems, tools, and research agents." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preload Inter from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ HEADER / HERO ═══════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-logo">AL</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <!-- Canvas: pretext renders the hero name character-by-character -->
+      <canvas id="hero-canvas" aria-label="Adrian Lam"></canvas>
+      <p class="hero-tagline" id="hero-tagline"></p>
+      <div class="hero-meta">
+        <span id="hero-university"></span>
+        <span class="sep">·</span>
+        <span id="hero-location"></span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a id="github-link" href="https://github.com/AnorakAdrianyc" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ PRETEXT DEMO STRIP ══════════════════════ -->
+  <section class="pretext-strip" aria-label="pretext live demo">
+    <div class="pretext-strip-inner">
+      <p class="pretext-label">pretext — live text measurement</p>
+      <div class="pretext-demo-row">
+        <div class="pretext-demo-box">
+          <textarea
+            id="demo-input"
+            class="demo-textarea"
+            rows="3"
+            placeholder="Type any text — including 中文, عربي, emoji 🚀…"
+          >AGI 春天到了. بدأت الرحلة 🚀 Hello, world!</textarea>
+          <div class="demo-controls">
+            <label>Width <input type="range" id="demo-width" min="80" max="600" value="320" /></label>
+            <label>Size <input type="range" id="demo-size" min="10" max="36" value="16" /></label>
+          </div>
+        </div>
+        <div class="pretext-demo-result">
+          <canvas id="demo-canvas"></canvas>
+          <div class="demo-stats" id="demo-stats"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p id="about-p1"></p>
+          <p id="about-p2">
+            I build AI systems, research tools, and market monitors that sit at the
+            intersection of physics intuition and software engineering. My work spans
+            autonomous agents, green finance analytics, computer vision, and game design.
+          </p>
+        </div>
+        <div class="about-interests">
+          <h3 class="sub-heading">Interests</h3>
+          <ul class="interest-list" id="interest-list"></ul>
+        </div>
+      </div>
+      <!-- Certifications -->
+      <div class="cert-row" id="cert-row"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ════════════════════════════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ══════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <!-- pretext-powered skill pill sizing demo -->
+      <canvas id="skills-canvas" aria-hidden="true"></canvas>
+      <div class="skills-pills" id="skills-pills"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═════════════════════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Open to research collaborations, hackathons, and interesting conversations.</p>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Adrian Lam © 2026</span>
+      <span>Typography powered by <a href="https://github.com/chenglou/pretext" target="_blank" rel="noopener">@chenglou/pretext</a></span>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ SCRIPTS ═════════════════════════════════ -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

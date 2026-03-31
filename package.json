@@ -1,0 +1,16 @@
+{
+  "name": "adrianlamyc-portfolio",
+  "version": "1.0.0",
+  "description": "Adrian Lam — personal portfolio & showcase powered by @chenglou/pretext",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
