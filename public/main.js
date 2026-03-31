@@ -10,7 +10,7 @@ import {
   layout,
   prepareWithSegments,
   layoutWithLines,
-} from 'https://esm.sh/@chenglou/pretext@0.0.4';
+} from 'https://esm.sh/@chenglou/pretext@0.0.3';
 import { initMonitor } from './monitor.js';
 
 // ─── Fetch profile data from our backend API ──────────────────────────────────
